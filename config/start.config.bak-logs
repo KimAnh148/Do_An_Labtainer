@@ -1,0 +1,17 @@
+    GLOBAL_SETTINGS
+    LAB_MASTER_SEED recon-ad-ldap-domain_student_master_seed
+NETWORK AD_LAB_NET
+     MASK 172.20.0.0/24
+
+CONTAINER dc01
+     USER ubuntu
+     AD_LAB_NET 172.20.0.10
+
+CONTAINER attacker
+     USER ubuntu
+     AD_LAB_NET 172.20.0.20
+     NAME_SERVER 172.20.0.10
+
+CONTAINER splunk
+     USER ubuntu
+     AD_LAB_NET 172.20.0.30

@@ -1,0 +1,11 @@
+    GLOBAL_SETTINGS
+    LAB_MASTER_SEED recon-ad-ldap-domain_student_master_seed
+CONTAINER dc01
+     USER ubuntu
+     X11 YES
+CONTAINER attacker
+     USER ubuntu
+     X11 YES
+CONTAINER splunk
+     USER ubuntu
+     X11 YES

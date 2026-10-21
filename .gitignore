@@ -1,0 +1,25 @@
+
+cat > .gitignore <<'EOF'
+# Large image archives and packages
+*.tar
+*.tar.gz
+*.deb
+*.img
+*.iso
+
+# Credentials and local environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.txt
+secrets.txt
+
+# Temporary and generated files
+*.log
+*.tmp
+__pycache__/
+.DS_Store
+EOF
